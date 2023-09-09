@@ -36,26 +36,29 @@ window.addEventListener('keyup', (event) =>{ // it's (event) not event
 
 
 
+
 // burger
 
 const burger = () =>{
-   const burg = document.getElementById('burger');
-   const ul = document.getElementsByTagName('ul')[0];
-   burg.addEventListener('click',()=>{
-    ul.style.display = "block";
-    console.log("displayed ul.");
-   });
+  const burg = document.getElementById('burger');
+  const ul = document.getElementsByTagName('ul')[0];
+  burg.addEventListener('click',()=>{
+   ul.style.display === "block";
+   console.log("displayed ul.");
+  });
 
 
-    if(ul.style.display="block"){
-      burg.addEventListener('click', () =>{
-           ul.style.display="none";
-           console.log("removed ul");
-           });
-    
-      }else{
-        ul.style.display="block";
-       console.log("wasn't clicked again.");
-      }
+   if(ul.style.display==="block"){
+     burg.addEventListener('click', () =>{
+          ul.style.display = "none";
+          console.log("removed ul");
+          })
+   
+     }else{
+       burg.addEventListener('click', () =>{
+         ul.style.display = "block";
+         console.log("removed ul");
+         })
+       }
 };
 
