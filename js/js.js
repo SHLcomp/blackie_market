@@ -10,10 +10,12 @@ const search = () => {
 
 
         if(match){
-          let textvalue =  match.textContent || match.innerHTML
+          let textvalue =  match.textContent || match.innerHTML;
+          let displayPhrase = document.getElementById('noItemsPhrase');
           if(textvalue.toUpperCase().indexOf(searchBox) > -1) {
             product[i].style.display = "";
-            console.log("found some itmes...")
+            let displayPhrase = document.getElementById('noItemsPhrase').style.display = "none";
+            console.log("found some itmes...");
 
           }else{
             product[i].style.display = "none";
