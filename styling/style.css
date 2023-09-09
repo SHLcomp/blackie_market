@@ -125,7 +125,7 @@ header nav h3{
     z-index: -1;
     width: 100%;
     min-height: 600px;   
-     background-image: url(/assets/scary-wallpaper6.jpeg);
+     background-image: url(../assets/scary-wallpaper6.jpeg);
     background-size: cover;
     background-position: center;
 }
